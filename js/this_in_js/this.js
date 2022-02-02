@@ -111,3 +111,5 @@ const obj3 = {
 obj3.impresion()// tambien se iria de una al contexto global
 
 // es ventaja y desventaja a la vez, saberla usar
+
+console.clear()
