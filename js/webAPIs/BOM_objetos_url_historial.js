@@ -15,4 +15,18 @@ console.log(location.hostname);
 console.log(location.pathname);
 
 
+console.log("objeto history, cuelga de window");
+console.log(history);
 
+
+
+// metodos para navegar entre paginas
+
+console.log("objeto navigator");
+console.log(navigator);
+console.log(navigator.connection);
+console.log(navigator.onLine = false);
+
+console.log(navigator.serviceWorker);// para hacer pwa
+
+console.log(navigator.userAgent);
