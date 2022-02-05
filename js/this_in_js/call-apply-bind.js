@@ -1,15 +1,14 @@
 // metodos para conservar el this de algo
 
-this.nombre = "con.global"
+/* this.nombre = "con.global"
 
 function saludar(edad,peso) {
     console.log(`${edad} ${this.nombre} ${peso}`);
 }
-
-
 saludar()// se ejecuta solo con el this.nombre, hasta que le pase los argumentos de los parametros
 
-// no crea su propio contexto
+
+ no crea su propio contexto
 const saludito = () => {
     console.log(`${this.nombre}`);
 }
@@ -19,6 +18,9 @@ let objeto = {
 }
 
 saludar.call(objeto,20,75)
+ */
+
+
 
 // uso del metodo call "llamar un una funcion y meterla a un this"//
 console.clear()
@@ -42,4 +44,21 @@ const otraPersona = {
 }
 
 otraPersona.saludar(); 
+
+
+
+const obj2 = {
+    nombre: "john",
+    saludo(){
+        console.log(`hola soy ${this.nombre}`)
+    }
+}
+
+
+const obj3 = {
+    saludito: obj2.saludo.bind(obj2)
+}
+
+console.log(obj3.saludito())
+
 
